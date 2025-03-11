@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.herding.android.library.convention)
-    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -15,22 +14,12 @@ android {
             )
         }
     }
-
-    buildFeatures {
-        compose = true
-    }
 }
 
 dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

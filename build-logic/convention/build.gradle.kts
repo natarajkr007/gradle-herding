@@ -27,5 +27,10 @@ gradlePlugin {
             id = "herding.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+
+        register("androidCompose") {
+            id = "herding.android.compose"
+            implementationClass = "ComposeConventionPlugin"
+        }
     }
 }

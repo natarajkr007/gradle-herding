@@ -40,3 +40,7 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 herding-android-application-convention = { id = "herding.android.application" }
 herding-android-library-convention = { id = "herding.android.library" }
+herding-android-compose-convention = { id = "herding.android.compose" }
+
+[bundles]
+compose-bundle = ["androidx-material3", "androidx-ui", "androidx-activity-compose", "androidx-ui-tooling-preview", "androidx-ui-graphics"]
